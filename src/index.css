@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/van_overlooking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-tab > a {
+  margin: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: peachpuff;
+  align-items: center;
+  height: 55px;
+}
+
+.vanlife {
+  margin-left: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+footer > h5 {
+  display: flex;
+  background-color: rgb(75, 75, 75);
+  color: rgb(206, 206, 206);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.home-div-big {
+  padding-bottom: 70px;
+}
+
+.home-div {
+  width: 90%;
+  color: white;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 1px black;
+}
+
+.home-div > h3, p {
+  margin-bottom: 40px;
+}
+
+.home-div > h3 {
+  font-size: 40px;
+}
+
+.home-div > p {
+  font-size: 21px;
+}
+
+.home-find-btn {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+  padding: 20px 180px;
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-div-big {
+  padding: 0;
+  padding-bottom: 70px;
+  background-color: antiquewhite;
+}
+
+.about-div {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-div > h4 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about-div > p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-card {
+  background-color: rgb(255, 172, 113);
+  padding: 5px 30px;
+  border-radius: 8px;
+}
+
+.about-card > h5 {
+  font-size: 18px;
+}
+
+.about-card > button {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+}
