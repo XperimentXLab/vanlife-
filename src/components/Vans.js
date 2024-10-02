@@ -13,7 +13,7 @@ function Vans () {
     <div key={van.id} className="vans-div">
       <h3>{van.name}</h3>
       <Link to={`/vans/${van.id}`} style={{textDecoration: 'none'}}>
-        <img src={van.imageUrl} className="vans-img"></img>
+        <img src={van.imageUrl} className="vans-img" alt="Van Image"></img>
       </Link>
       <div className="vans-info">
         <p>Price: ${van.price}/day</p>

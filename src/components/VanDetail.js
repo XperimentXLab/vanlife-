@@ -16,7 +16,7 @@ function VanDetail () {
       {van ? (
         <div key={van.id} className="vandetail-div">
           <h3>{van.name}</h3>
-          <img src={van.imageUrl}></img>
+          <img src={van.imageUrl} alt="Van Image"></img>
           <div className="vandetail-more">
             <span>Price: ${van.price}/day</span>
             <i className={`vans-${van.type}`}>{van.type}</i>
