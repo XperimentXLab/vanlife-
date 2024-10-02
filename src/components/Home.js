@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home () {
   return (
     <div className="home-div-big"> 
@@ -8,7 +10,9 @@ function Home () {
           <br />
           Rent the perfect van to make your perfect road trip.
         </p>
-        <button className="home-find-btn">Find your van</button>
+        <Link to="/vans">
+          <button className="home-find-btn">Find your van</button>
+        </Link>
       </div>
     </div>
   );

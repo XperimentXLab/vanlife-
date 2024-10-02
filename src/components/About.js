@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function About () {
   return (
     <div className="about-div-big">
@@ -20,7 +22,9 @@ function About () {
             <br />
             Your van is ready.
           </h5>
-          <button>Explore our vans</button>
+          <Link to='/vans'>
+            <button className="about-vans-btn">Explore our vans</button>
+          </Link>
         </div>
       </div>
     </div>

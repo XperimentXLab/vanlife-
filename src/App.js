@@ -3,6 +3,9 @@ import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import About from './components/About';
 import Vans from './components/Vans';
 
+import "./server";
+import VanDetail from './components/VanDetail';
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +23,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/vans' element={<Vans />} />
+      <Route path='/vans/:id' element={<VanDetail />} /> 
     </Routes>
 
     <footer>
@@ -30,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+//:id = variable of 'id'
