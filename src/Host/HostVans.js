@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function HostVans () {
 
@@ -15,7 +15,7 @@ function HostVans () {
       <div key={van.id} className="host-van-div">
         <Link to={`/host/vans/${van.id}`} >
         <img 
-          alt="van image"
+          alt="van_image"
           className="host-van-img"
           src={van.imageUrl}
         /></Link>

@@ -19,7 +19,7 @@ function VansDetailLayout () {
       </Link>
       <div className="host-vandetail-div-big">
         <div key={van.id} className="host-vandetail-div-small">
-          <img alt="van image"
+          <img alt="van_image"
             className="host-vandetail-img"
             src={van.imageUrl} />
           <div style={{paddingLeft: 10}}>
