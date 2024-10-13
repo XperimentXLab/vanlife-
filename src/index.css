@@ -217,3 +217,111 @@ footer > h5 {
 .vandetail-more > p {
   width: 89%;
 }
+
+.host-nav {
+  background-color: bisque;
+  justify-content: left;
+}
+
+.host-nav > a,
+.host-vandetail-nav > a {
+  text-decoration: none;
+  margin: 10px 20px;
+  color: black;
+}
+
+a.active-link,
+.host-nav > a:hover
+.host-vandetail-nav > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.host-van-div {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 30px 30px;
+  border-radius: 10px;
+}
+
+.host-van-div-small {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 23px;
+}
+
+.host-van-div-small > h4 {
+  font-size: 23px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.host-van-img {
+  width: 120px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.host-van-div-big {
+  margin: 20px 30px;
+  margin-bottom: 80px;
+}
+
+.host-van-div-big > h3 {
+  font-size: 25px;
+}
+
+.host-vandetail-back {
+  margin: 15px 32px;
+  
+  text-decoration: none;
+  color: black;
+}
+
+.host-vandetail-div-big {
+  margin: 20px 30px;
+  background-color: aliceblue;
+}
+
+.host-vandetail-div-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.host-vandetail-div-small-h3 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.host-vandetail-div-small-span {
+  font-size: 20px;
+}
+
+.host-vandetail-img {
+  width: 190px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.host-vandetail-nav {
+  background-color: inherit;
+  justify-content: left;
+}
+
+.host-vandetail-nav > a {
+  margin: 1px 15px;
+}
+
+.host-vandetails-div {
+  margin: 10px 10px;
+  margin-bottom: 70px; 
+  padding-bottom: 20px;
+}
