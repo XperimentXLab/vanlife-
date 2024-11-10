@@ -15,4 +15,4 @@ function Layout () {
 export default Layout
 
 //Nested Route
-//Outlet = a placeholder that fills with whatever nested routes you define
+//Outlet = a placeholder that fills with whatever nested routes you define aka children route

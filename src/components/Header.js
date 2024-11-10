@@ -1,5 +1,9 @@
 import { Link, NavLink } from "react-router-dom"
 
+function handleX () {
+  localStorage.removeItem("loggedin")
+}
+
 function Header () {
   return (
     <header>
@@ -18,6 +22,15 @@ function Header () {
           to='/about'
           className={({isActive})=> isActive ? "active-link" : null}
         >About</NavLink>
+        <Link
+          to='/login'
+        ><img 
+            alt="avatar_icon"
+            className="avatar-icon"
+            src={"/images/avatar-icon.png"}
+          />
+        </Link>
+        <button className="x-btn" onClick={handleX}>X</button>
       </div>
     </nav>
   </header>

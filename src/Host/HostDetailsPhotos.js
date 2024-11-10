@@ -4,15 +4,12 @@ function HostDetailsPhotos () {
 
   const { vans }= useOutletContext()
 
-  const vandetailsElement = vans.map(van => (
-    <img alt="van_image"
-      className="host-vandetail-img"
-      src={van.imageUrl} />
-  ))
-
   return (
     <div className="host-vandetails-div">
-      {vandetailsElement}
+      <img alt="van_image"
+        className="host-vandetail-img"
+        src={vans.imageUrl} 
+      />
     </div>
   )
 }

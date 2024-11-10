@@ -1,7 +1,14 @@
 //import { useEffect, useState } from "react"
 //import { Outlet, useParams } from "react-router-dom"
 
-import { useOutletContext } from "react-router-dom"
+import { useOutletContext } from "react-router-dom" //It allows to share data between the parent and child routes without having to pass props manually all the time.
+
+/*
+export async function loader ({ request }) {
+  await AuthRequired (request)
+  return defer ({ vans: getHostVans()}) 
+}
+  */
 
 function HostVansDetail () {
   /*
@@ -15,25 +22,29 @@ function HostVansDetail () {
   },[params.id])
   */
 
-  const { vans }= useOutletContext()
+  const { vans } = useOutletContext()
+  //const dataPromise = useLoaderData()
 
-  const vandetailElement = vans.map(van => {
-    return (
-      <div> 
-        <p><b>Name:</b> {van.name}</p>
-        <p><b>Category:</b> {van.type}</p>
-        <p><b>Description:</b> {van.description}</p>
+  //function renderHostVanDetailEl (vans) {
+  return (
+    <div className="host-vandetails-div" key={vans.id}>
+        <p><b>Name:</b> {vans.name}</p>
+        <p><b>Category:</b> {vans.type}</p>
+        <p><b>Description:</b> {vans.description}</p>
         <p><b>Visibilty:</b> Public</p>
       </div>
-    )
-  })
-  
-  
-  return (
-    <div className="host-vandetails-div">
-      {vandetailElement}
-    </div>
   )
+
+  /*
+  return (
+    <Suspense fallback={<h2>Loading....</h2>}>
+      <Await resolve={dataPromise.vans}>
+        {renderHostVanDetailEl}
+      </Await>
+    </Suspense>
+  )
+  */
 }
+
 
 export default HostVansDetail
