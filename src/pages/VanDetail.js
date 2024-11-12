@@ -1,12 +1,12 @@
 //import { useEffect, useState } from "react"
 import { Await, defer, Link, useLoaderData, useLocation } from "react-router-dom"
-import { getVans } from "../api"
+import { getVan } from "../api"
 import { Suspense } from "react"
 
 //const params = useParams() //the params take : in link api to be the object name
 
 export function loader ({ params }) {
-  return defer ({ vans: getVans(params.id) })
+  return defer ({ vans: getVan(params.id) })
 }
 
 function VanDetail () {

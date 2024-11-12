@@ -1,12 +1,12 @@
 //import { useEffect, useState } from "react"
 import { Await, defer, Link, NavLink, Outlet, useLoaderData, useParams } from "react-router-dom"
 import {AuthRequired }from './AuthRequired'
-import { getVans } from "../api"
+import { getVan } from "../api"
 import { Suspense } from "react"
 
 export async function loader({params, request}) {
   await AuthRequired(request)
-  return defer ({ vans: getVans(params.id) })
+  return defer ({ vans: getVan(params.id) })
 }
 
 function VansDetailLayout () {
